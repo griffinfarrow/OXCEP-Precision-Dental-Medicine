@@ -1,18 +1,38 @@
 #!/bin/bash
 
-echo "Setting up course environment from environment.yml"
+ENV_NAME="precision-course-env"
+ENV_FILE="environment.yml"
 
-if [ ! -f environment.yml ]; then
-    echo "ERROR: environment.yml not found in current directory."
+echo "========================================"
+echo "Setting up course environment from $ENV_FILE"
+echo "========================================"
+if [ ! -f $ENV_FILE ]; then
+    echo "ERROR: $ENV_NAME  not found in current directory."
     exit 1
 fi
 
 # Conda activation support
 source "$(conda info --base)/etc/profile.d/conda.sh"
 
-# Create environment
-conda env create -f environment.yml
+# Delete environment if already exists 
+if conda info --envs | grep -q "^$ENV_NAME\s"; then
+    echo "Environment '$ENV_NAME' exists. Removing it..."
+    conda env remove -n $ENV_NAME -y
+fi
 
+# Create environment
+conda env create -f $ENV_FILE -y
+pip install --upgrade scikit-learn 
+
+
+echo " "
+echo "========================================"
 echo "Environment created."
-echo "To activate it, run:"
-echo "conda activate course-env"
+echo "========================================"
+echo " "
+
+echo "========================================"
+echo "Testing whether environment has been correctly created."
+echo "========================================"
+conda activate $ENV_NAME
+python verify_installation.py
