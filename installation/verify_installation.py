@@ -2,15 +2,16 @@ import importlib
 import sys
 
 REQUIRED_PACKAGES = {
-    "numpy": "1.24",
-    "scipy": "1.10",
-    "pandas": "1.5",
-    "sklearn": "1.2",
+    "numpy": "1.26",
+    "scipy": "1.8",
+    "pandas": "2.2",
+    "sklearn": "1.4",            # scikit-learn is installed, but import is "sklearn"
     "shap": "0.41",
-    "lifelines": "0.27",
-    "matplotlib": "3.6",
-    "notebook": "6.5",
-    "jupyterlab": "3.6",
+    "lifelines": "0.30",
+    "matplotlib": "3.8",
+    "notebook": "7.4",
+    "ipykernel": "6.29",
+    "jupyterlab": "4.1",
 }
 
 errors = []
@@ -22,7 +23,7 @@ for pkg, expected_version in REQUIRED_PACKAGES.items():
         module = importlib.import_module(pkg)
         version = getattr(module, '__version__', 'unknown')
         if not version.startswith(expected_version):
-            print(f"⚠️  {pkg} version mismatch: expected {expected_version}, found {version}")
+            print(f"⚠️  {pkg} version mismatch: expected {expected_version}.*, found {version}")
         else:
             print(f"✅ {pkg} is OK (version {version})")
     except ImportError:
@@ -30,7 +31,7 @@ for pkg, expected_version in REQUIRED_PACKAGES.items():
         print(f"❌ {pkg} is missing!")
 
 if errors:
-    print("\nSome required packages are missing!")
+    print("\n❌ Some required packages are missing!")
     print("Missing:", ", ".join(errors))
     sys.exit(1)
 else:
