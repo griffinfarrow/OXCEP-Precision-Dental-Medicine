@@ -22,7 +22,6 @@ fi
 
 # Create environment
 conda env create -f $ENV_FILE -y
-pip install --upgrade scikit-learn 
 
 
 echo " "

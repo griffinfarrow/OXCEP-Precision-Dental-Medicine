@@ -8,4 +8,4 @@ if [ $? -ne 0 ]; then
     exit 1
 fi 
 
-jupyter notebook
+jupyter notebook --notebook-dir="../course_content/"

@@ -2,16 +2,16 @@ import importlib
 import sys
 
 REQUIRED_PACKAGES = {
-    "numpy": "1.26",
+    "numpy": "1.24",
     "scipy": "1.8",
     "pandas": "2.2",
     "sklearn": "1.4",            # scikit-learn is installed, but import is "sklearn"
-    "shap": "0.41",
+    "shap": "0.40",
     "lifelines": "0.30",
     "matplotlib": "3.8",
     "notebook": "7.4",
     "ipykernel": "6.29",
-    "jupyterlab": "4.1",
+    "jupyterlab": "4.4",
 }
 
 errors = []
