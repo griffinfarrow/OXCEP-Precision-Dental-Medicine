@@ -35,10 +35,12 @@ IF %ERRORLEVEL% NEQ 0 (
 
 echo Environment created.
 
-:: Activate environment and run test 
-echo Testing environment
-call conda activate %ENV_NAME%
+:: IMPORTANT: Properly activate conda environment
+CALL "%USERPROFILE%\miniconda3\Scripts\activate.bat"
+CALL conda activate %ENV_NAME%
 
+:: Run the Python script
+echo Running verification...
 python verify_installation.py
 
 pause
