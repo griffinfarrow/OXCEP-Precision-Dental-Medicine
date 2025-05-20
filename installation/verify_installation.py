@@ -5,7 +5,7 @@ REQUIRED_PACKAGES = {
     "numpy": "1.24",
     "scipy": "1.10",
     "pandas": "1.5",
-    "scikit-learn": "1.2",
+    "sklearn": "1.2",
     "shap": "0.41",
     "lifelines": "0.27",
     "matplotlib": "3.6",
