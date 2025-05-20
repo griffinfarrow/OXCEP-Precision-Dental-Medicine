@@ -8,4 +8,4 @@ IF %ERRORLEVEL% NEQ 0 (
     EXIT /B 1
 )
 
-jupyter notebook
+jupyter notebook --notebook-dir="../course_content"
