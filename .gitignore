@@ -172,4 +172,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Mac Specific Files
 .DS_Store
+
+# VS Code jsettings files
+.vscode/settings.json
