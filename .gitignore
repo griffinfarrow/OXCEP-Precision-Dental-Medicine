@@ -178,3 +178,4 @@ cython_debug/
 
 # VS Code jsettings files
 .vscode/settings.json
+course_content/.vscode/settings.json
