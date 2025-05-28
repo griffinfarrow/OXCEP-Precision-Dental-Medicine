@@ -6,7 +6,7 @@ REQUIRED_PACKAGES = {
     "scipy": "1.8",
     "pandas": "2.2",
     "sklearn": "1.4",            # scikit-learn is installed, but import is "sklearn"
-    "shap": "0.40",
+    "shap": "0.41",
     "lifelines": "0.30",
     "matplotlib": "3.8",
     "notebook": "7.4",
