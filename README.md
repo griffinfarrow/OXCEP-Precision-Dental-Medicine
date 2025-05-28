@@ -8,9 +8,9 @@ This is a link to a word document where we talk through the installation instruc
 * ~~Test setup scripts~~
 * ~~Test Python installation~~
 * ~~Test whether e.g. scikit-learn works~~
-* Write *detailed* instructions for installation:  
-    * Should cover Windows and Mac  
-    * Suggest using Anaconda, but Miniconda + scripts is also an option  
+* ~~Write *detailed* instructions for installation:~~  
+    * ~~Should cover Windows and Mac  ~~
+    * ~~Suggest using Anaconda, but Miniconda + scripts is also an option~~  
 * Write Jupyter notebooks with all the tasks 
     * Basic pandas/python/EDA
     * Scikit-learn for the HPV/head cancer
