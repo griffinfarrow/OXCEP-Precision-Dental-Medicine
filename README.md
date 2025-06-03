@@ -16,4 +16,6 @@ This is a link to a word document where we talk through the installation instruc
     * Scikit-learn for the HPV/head cancer
     * Scikit-learn, lifelines, SHAP for the other case
 * Datasets?
-    * Dan to acquire these?
+    * ~Dan to acquire these?~
+    * A dataset to demonstrate treatment response 
+* Find a better solution for dataset storage than keeping in the Git repo!
