@@ -6,6 +6,14 @@ This is a link to a word document where we talk through the installation instruc
 # Questions 
 * Lacking treatment information for the prostate cancer patients: should we just say they were all prostatectomies?
   
-* Still need to do long course notebooks
-  
 * How confident are we in their python expertise...?
+
+# Short Course
+* Notebooks made, relatively happy with them
+* Need reviewing by Dan
+* Do we need a more detailed "Python basics" notebook?
+
+# Long Course
+* Currently have just copied the short course notebooks into the long course
+* Worth having a discussion about what the content for the long course actually needs to be?
+* How should it differ from the short course?
