@@ -5,3 +5,7 @@ This is a link to a word document where we talk through the installation instruc
 
 # Questions 
 * Lacking treatment information for the prostate cancer patients: should we just say they were all prostatectomies?
+  
+* Still need to do long course notebooks
+  
+* How confident are we in their python expertise...?
