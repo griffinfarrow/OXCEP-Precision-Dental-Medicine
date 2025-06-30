@@ -2,7 +2,7 @@
 
 ![Logo](logo/logo.png)
   
-Welcome to the practical coding course for the OXCEP Summer School in Precision Dental Medicine and Precision Medicine. This repository contains the course materials.
+Welcome to the practical coding course for the OXCEP Summer School in Precision Dental Medicine. This repository contains the course materials.
   
 If you have any issues with these course materials, please email Griffin Farrow at `Griffin.Farrow@nds.ox.ac.uk`.  
   
@@ -51,44 +51,6 @@ The course content is provided in the `course_content/` directory. We briefly su
 * You will be shown how to use the `lifelines` library to do survival analysis
 * You will plot Kaplan-Meier curves to compare the survival outcomes of the subtypes you found in the previous homework
 * We will discuss the ethical and broader implications of using AI and machine learning in personalised Medicine
-
-### <u> Precision Medicine (5 practical coding sessions) </u>
-
-<u> Session 1: Introduction </u>
-
-* Introduction and welcome to the practical coding course
-* What is machine learning and data science? And why might it be useful in healthcare?
-* How do I build a decision tree and random forest from scratch?
-* Demonstration of how to use Python and `pandas` for data science
-
-<u> Session 2: Data Science Best Practices </u>
-
-* What are best practices in data science?
-* Why is transparency and reproducibility in data science important? 
-* Test-train splitting, cross-validation, hyperparameter tuning
-
-<b> Homework</b>: You will be asked to train a random forest machine learning model to predict HPV status from mRNA data of head and neck squamous cell carcinoma, including loading and preprocessing the data using the `pandas` library
-
-<u> Session 3: Model Evaluation with Python </u>
-
-* We will explain how to evaluate a machine learning model
-* Time for 1:1 feedback with instructors to talk through your understanding so far
-* Evaluation of the model you produced in the previous session 
-* The trade-off between different model performance measures 
-
-<u> Session 4: Identifying the most important inputs </u> 
-
-* Why is feature selection so important in healthcare data science? 
-* What are SHAP scores and how can we use them? 
-* We will show you how to use SHAP to build a prospective list of the "most important" features, to aid in biomarker discovery 
-
-<b> Homework</b>: You will be asked to build a random forest model to predict subtypes of prostate adenocarcinoma, using mRNA data from TCGA. You will then evaluate these models and build a biomarker panel to better test for these subtypes.
-
-<u> Session 5: Survival Analysis </u>
-* You will be shown how to use the `lifelines` library to do survival analysis
-* You will plot Kaplan-Meier curves to compare the survival outcomes of the subtypes you found in the previous homework
-* We will discuss the ethical and broader implications of using AI and machine learning in personalised Medicine
-
 
 ## Datasets
   
